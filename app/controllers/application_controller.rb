@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :index
+    erb :welcome
   end
   
   helpers do
@@ -22,3 +22,5 @@ class ApplicationController < Sinatra::Base
       User.find(session[:user_id])
      end
   end
+  
+end
